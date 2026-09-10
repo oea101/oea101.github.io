@@ -1,0 +1,2 @@
+import type {Entry} from './site-content';
+export default function EntryList({entries}:{entries:Entry[]}){return <div>{entries.map(entry=><article key={entry.url} className="entry"><h2><a href={entry.url}>{entry.title}</a></h2><p className="description">{entry.description}</p>{(entry.date||entry.detail)&&<p className="meta">{entry.date}{entry.date&&entry.detail?' · ':''}{entry.detail}</p>}</article>)}</div>}
