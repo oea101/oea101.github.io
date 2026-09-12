@@ -122,5 +122,19 @@ export const writing: Entry[] = [
     "date": "23 Nov 2024"
   }
 ];
-export const speaking: Entry[] = [];
+export const speaking: Entry[] = [
+  {
+    "title": "Building the Future of AI: Freight and Trucking",
+    "description": "Hosted a FounderCulture fireside chat with Tobenna Arodiogbu, co-founder and CEO of CloudTrucks, on applications of AI in freight and trucking.",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7124832334532538368/",
+    "detail": "FounderCulture \u00b7 Fireside chat host \u00b7 Recap published 30 Oct 2023"
+  },
+  {
+    "title": "AI in Action E225: Building Gentem Health",
+    "description": "A conversation with JP Valentine about AI and automation in healthcare finance, building Gentem Health, lessons from the founder journey, and growing the team.",
+    "url": "https://alldus.com/podcast/ai-in-action-e225-manny-akintayo-co-founder-and-cto-at-gentem-health/",
+    "date": "25 Jun 2021",
+    "detail": "Alldus \u00b7 Podcast guest"
+  }
+];
 export const prototypes: Entry[] = [];
