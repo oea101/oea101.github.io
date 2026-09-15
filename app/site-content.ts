@@ -2,6 +2,12 @@ export type Entry = { title: string; description: string; url: string; date?: st
 export const profile = {"name": "Manny Akintayo", "bio": "Engineer turned entrepreneur. Co-founder at Gentem Health Inc., with past experience at Meta, JPMorgan, and Accenture. Passionate about AI and automation.", "substack": "https://getcbt.substack.com", "github": "https://github.com/oea101", "email": ""};
 export const writing: Entry[] = [
   {
+  "title": "Do AI Models Recommend the Same Financial Products?",
+  "description": "An experiment comparing 120 financial product recommendations from three AI models, exploring agreement, familiar brands, and overlap with affiliate publishers.",
+  "url": "https://getcbt.substack.com/p/do-ai-models-recommend-the-same-financial",
+  "date": "14 Sep 2026"
+},
+  {
     "title": "China's AI Constellation, YouTube's Ad Matchmaker, and the GPT-4.1's Rollout",
     "description": "What secrets will China's AI constellation unlock? How will YouTube and Gemini change your viewing experience? What hidden power does GPT-4.1 bring to ChatGPT? Let's dig into this week's highlights!",
     "url": "https://getcbt.substack.com/p/chinas-ai-constellation-youtubes",
