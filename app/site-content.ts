@@ -1,6 +1,17 @@
 export type Entry = { title: string; description: string; url: string; date?: string; detail?: string; tags?: string[] };
 export const profile = {"name": "Manny Akintayo", "bio": "Engineer turned entrepreneur. Co-founder at Gentem Health Inc., with past experience at Meta, JPMorgan, and Accenture. Passionate about AI and automation.", "substack": "https://getcbt.substack.com", "github": "https://github.com/oea101", "email": ""};
 export const writing: Entry[] = [
+{
+  "title": "Can Jev Route Support Tickets as Well as an LLM?",
+  "description": "I routed 3,080 banking support tickets with Jev and three frontier LLMs. Jev was up to 13x faster and 19x cheaper, within 5 points on accuracy.",
+  "url": "https://getcbt.substack.com/p/can-jev-route-support-tickets-as",
+  "date": "14 Oct 2026",
+  "tags": [
+    "AI evaluation",
+    "Enterprise AI",
+    "Fintech"
+  ]
+},
   {
     "title": "Do AI Models Recommend the Same Financial Products?",
     "description": "An experiment comparing 120 financial product recommendations from three AI models, exploring agreement, familiar brands, and overlap with affiliate publishers.",
