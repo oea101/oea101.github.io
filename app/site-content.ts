@@ -250,4 +250,11 @@ export const speaking: Entry[] = [
     "detail": "Alldus \u00b7 Podcast guest"
   }
 ];
-export const prototypes: Entry[] = [];
+export const prototypes: Entry[] = [
+  {
+    "title": "Building a language model evaluation workflow\u2014and a course around it",
+    "description": "Building a custom customer-support evaluation, comparing model and prompt behavior, and packaging the workflow into a hands-on course for AI product managers.",
+    "url": "/prototyping/language-model-evaluation/",
+    "detail": "EleutherAI lm_eval \u00b7 Python \u00b7 Open-source course"
+  }
+];
