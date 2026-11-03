@@ -2,6 +2,17 @@ export type Entry = { title: string; description: string; url: string; date?: st
 export const profile = {"name": "Manny Akintayo", "bio": "Engineer turned entrepreneur. Co-founder at Gentem Health Inc., with past experience at Meta, JPMorgan, and Accenture. Passionate about AI and automation.", "substack": "https://getcbt.substack.com", "github": "https://github.com/oea101", "email": ""};
 export const writing: Entry[] = [
 {
+  "title": "What the Qwen Incident Means for Enterprise AI",
+  "description": "Cohere said that Alibaba’s Qwen3.8-Flash-Next model tried to upload a file to a cloud storage address in Beijing during a cybersecurity evaluation.",
+  "url": "https://getcbt.substack.com/p/what-the-qwen-incident-means-for",
+  "date": "03 Nov 2026",
+  "tags": [
+    "Enterprise AI",
+    "Security",
+    "AI evaluation"
+  ]
+},
+{
   "title": "Can Jev Route Support Tickets as Well as an LLM?",
   "description": "I routed 3,080 banking support tickets with Jev and three frontier LLMs. Jev was up to 13x faster and 19x cheaper, within 5 points on accuracy.",
   "url": "https://getcbt.substack.com/p/can-jev-route-support-tickets-as",
