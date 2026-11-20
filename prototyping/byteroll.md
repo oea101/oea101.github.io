@@ -68,7 +68,7 @@ After a representative started the session, Myra greeted them and asked what the
 
 The Notes tab let reps review role-play notes and sales conversations with prospects.
 
-<p align="center"><img src="../images/projects/byteroll/notes-sessions.png" alt="Notes screen with evenly spaced dated sessions and Notes, Ask, and Role play tabs." width="300"><br><em>My Notes with dated sessions and audio controls</em></p>
+<p align="center"><img src="../images/projects/byteroll/notes-sessions.png" alt="Notes screen with evenly spaced dated sessions and Notes, Ask, and Role play tabs." style="width:50%;max-width:360px;margin:28px auto 12px"><br><em>My Notes with dated sessions and audio controls</em></p>
 
 The selected topic, sales approach, and buyer persona shaped the scenario, while company and device materials provided its context.
 
