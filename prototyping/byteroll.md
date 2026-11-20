@@ -1,0 +1,180 @@
+# Building ByteRoll: Voice AI for Medical-Device Sales Practice
+
+How healthcare-intelligence research led to a voice-based practice app for medical-device reps, and why evaluation became central to the product.
+
+## The problem I knew firsthand
+
+The idea for ByteRoll started with a problem I had seen firsthand at Gentem Health. I sold the business in November 2023, but kept thinking about how hard it had been for our team to use healthcare intelligence to understand the hospitals and clinics we wanted to serve.
+
+We used industry data from providers like Definitive Healthcare to understand what procedures hospitals offered, what their payer mix looked like, and whether they fit the profile of a customer we could help. The information was there, but turning it into a useful picture of an account often meant downloading files, reviewing them, and working through spreadsheets. It took effort to answer basic questions about a potential customer, and the picture could be difficult to keep current.
+
+That was not only my experience. In a 2023 survey of 100 professionals at companies selling into healthcare, 39% strongly agreed that their teams spent a lot of time matching datasets, while 56% strongly agreed that their teams had the data and insights they needed to identify prospects. [Survey source](https://www.definitivehc.com/sites/default/files/resources/pdfs/How-to-use-healthcare-reference-and-affiliation-data-to-grow-your-business.pdf)
+
+### Survey responses about healthcare prospecting data (n=100)
+
+| **Survey statement** | **Strongly agreed** |
+| --- | --- |
+| Their teams spent a lot of time matching datasets | 39% |
+| Their teams had the data and insights needed to identify prospects | 56% |
+
+![Healthcare data sources flow through manual research to account questions, alongside survey results.](../images/projects/byteroll/healthcare-data-to-account-insight.png)
+
+*From healthcare data to account insight*
+
+By June 2024, I had started exploring the problem more deeply. The question was bigger than my experience at Gentem: who else relied on healthcare intelligence, what were they trying to decide, and where did the work break down?
+
+## Discovery and the healthcare intelligence thesis
+In August 2024, I joined Menlo Ventures' Entrepreneur-in-Residence program and began putting structure around the questions I had carried out of Gentem. I wanted to understand who else relied on healthcare intelligence, what they needed to know about the organizations they sold to, and how they turned raw data into a decision.
+
+Four interviews in the research notes gave the problem different shapes. A revenue-cycle company used account data to find hospitals and understand which systems they used, but still built and checked prospect lists by hand. An e-prescribing company sold across digital health, telehealth, large practices, and health systems, where good outreach depended on knowing the healthcare context behind an account. A health-system software company already had much of its account information in its CRM, a reminder that the pain was not the same for every seller. And a medical-device company described receiving large procedure-volume files that took so long to process that the information could be about a year old by the time it was useful for surgeon and territory planning.
+
+The questions were different, even when the underlying need sounded similar: Which organizations should we focus on? Who matters there? What is happening at that account? What evidence would help a seller decide what to do next? The answer depended on the segment, the buyer, and the decision the team was trying to make.
+
+### Research questions and remaining work across four healthcare interviews
+
+| **Company type** | **Question the team needed to answer** | **Work that remained** |
+| --- | --- | --- |
+| Revenue-cycle software | Which hospitals fit, and what systems do they use? | Building and checking prospect lists |
+| E-prescribing | Which health organizations should they approach, and how? | Adding relevant healthcare context |
+| Health-system software | What information did the team already have about an account? | Much of it was already in the CRM |
+| Medical-device sales | Which surgeons and territories should they prioritize? | Processing procedure-volume files that could be stale |
+
+The research expanded to life-sciences teams looking for potential clinical-trial participants and provider organizations examining credentials, payer patterns, quality, and population health. That gave ByteRoll a wide map of possible uses, but also raised a harder product question: which job was painful and specific enough to build around first?
+
+## Why the thesis moved toward medical-device sales
+
+As the work evolved, we moved from healthcare intelligence toward sales enablement. We chose orthopedic device sales as our first focus, with a specific job to build around: helping reps prepare for product-specific conversations with surgeons and care teams. Reps needed to understand the device, tailor the explanation to the audience, and speak accurately about how it fit the team's work.
+
+This is a distinctive kind of selling. A qualitative study of 22 orthopedic and cardiovascular physicians described device representatives supporting training, troubleshooting, device assembly, and the learning curve for new devices. The American College of Surgeons also describes representatives as educators and technical facilitators, while emphasizing that their presence does not replace preoperative training for the surgical team and that they must not make medical decisions. [Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC5373623/)  |  [American College of Surgeons guidance](https://www.facs.org/about-acs/statements/health-care-industry-representatives-in-the-operating-room/)
+
+![Three Skeletal Dynamics wrist and forearm systems shown in X-ray images, with a component summary.](../images/projects/byteroll/skeletal-dynamics-wrist-forearm-systems.png)
+
+*Examples from Skeletal Dynamics' wrist and forearm systems*
+
+Those demands made medical devices a focused first market for a broader field-sales thesis, with a possible path into HVAC and construction.
+
+## The product: AI practice for field sales
+
+ByteRoll was an AI practice and coaching app for field sales, starting with orthopedic devices. It turned that preparation job into a practice loop: reps chose a product topic, sales approach, and surgeon or care-team persona, then rehearsed aloud with Myra. Company and device materials gave the simulation product context, and Notes let reps review role-play notes, sales conversations with prospects, and coaching afterward. That addressed the need directly: reps could practice explaining a device accurately to the surgeon or care team in front of them.
+
+## The rep's practice flow
+
+The app organized this experience across three tabs: Notes, Ask, and Role play. Notes captured sales meetings and turned them into material reps could review later, alongside notes from practice sessions. Ask gave reps a place to ask Myra questions about product information or a sales situation. Role play let them rehearse a conversation with Myra, specifying the product, customer persona, and scenario they wanted to work through.
+
+After a representative started the session, Myra greeted them and asked what they wanted to practice. The rep could respond out loud and follow the conversation on screen.
+
+| ![The Role play tab alongside Notes and Ask.](../images/projects/byteroll/role-play-tabs.png)<br>*The Role play tab alongside Notes and Ask.* | ![An open Myra conversation during practice.](../images/projects/byteroll/myra-role-play.png)<br>*An open Myra conversation during practice.* |
+| --- | --- |
+
+The Notes tab let reps review role-play notes and sales conversations with prospects.
+
+<p align="center"><img src="../images/projects/byteroll/notes-sessions.png" alt="Notes screen with evenly spaced dated sessions and Notes, Ask, and Role play tabs." width="300"><br><em>My Notes with dated sessions and audio controls</em></p>
+
+The selected topic, sales approach, and buyer persona shaped the scenario, while company and device materials provided its context.
+
+## From the rep workflow to voice architecture
+
+The app had two distinct voice jobs. Role play needed to sustain a live conversation with Myra and show the transcript. Notes needed to capture a sales meeting and make it useful for review later. Those different jobs drove two separate voice paths.
+
+![Diagram showing the live role-play path through the React Native app and Vapi with GPT-4o and ElevenLabs, and the sales-meeting Notes path through Expo Audio Studio, Supabase, ElevenLabs Scribe with Whisper fallback, and GPT-4 Turbo Preview.](../images/projects/byteroll/voice-workflows.png)
+
+***ByteRoll used one voice path for live practice and another for sales-meeting Notes.***
+
+For practice, the React Native client started a live Vapi session with a scenario-specific prompt, GPT-4o as the conversation model, and an ElevenLabs voice. The app displayed Vapi transcript events so the representative could follow the exchange on screen.
+
+Notes followed a different path. Expo Audio Studio captured native audio in chunks, and the recording hook processed it in roughly one-minute segments. The mobile transcription function defaulted to ElevenLabs Scribe v1 with diarization enabled, then fell back to OpenAI Whisper-1 if that request failed. A separate Supabase function summarized the transcript with GPT-4 Turbo Preview. In the earlier browser prototype, MediaRecorder captured the audio; users could choose ElevenLabs or OpenAI for transcription, and the summary defaulted to GPT-4.1 mini.
+
+We also wanted teams to connect their company and device materials so reps could choose a product topic, sales approach, and buyer persona for each practice session. The next question was whether Myra could retrieve the right device claims, adapt them to the selected approach and buyer, and stay within approved language. That question led into the evaluation work.
+
+## How we evaluated the practice system
+
+One score could not tell us whether Myra had the right device knowledge and whether the representative handled the conversation well. Both mattered: a polished simulation could still include an unsupported medical claim, while a word-perfect script could sound unnatural.
+
+We began to frame quality along the path from evidence to conversation. First, did retrieval find the right medical claims, with strong precision and recall and low sensitivity to irrelevant or poorly extracted material? Then, were generated claims faithful to the source, relevant to the question, and correct? Finally, did the claims make it into the transcript in a way that fit the script and stayed within approved use?
+
+![Two-layer evaluation overview. Agent claim quality checks retrieval precision, recall and noise sensitivity, claim faithfulness, relevance and correctness, then claim adherence, script fit and on-label use. Rep conversation quality scores script adherence, key messages, compliance, engagement and rapport, objection handling, and call to action.](../images/projects/byteroll/evaluation-scorecards.png)
+
+*The evaluation covered the agent’s product claims and the representative’s conversation.*
+
+The web prototype compared an assigned sales script with the call transcript. An LLM returned section scores, status, supporting transcript excerpts, and coaching on strengths and improvements. Its prompt balanced script adherence with natural flow across six dimensions:
+
+### How the transcript was scored
+
+| **Dimension** | **What the evaluator looked for** |
+| --- | --- |
+| **Script adherence** | Did the rep cover the intended parts of the assigned script while keeping the exchange natural? |
+| **Key messages** | Did the rep communicate the important product points? |
+| **Compliance** | Did the conversation stay within approved, supportable product claims? |
+| **Engagement and rapport** | Did the rep respond to the buyer’s cues and keep the exchange two-way? |
+| **Objection handling** | Did the rep address concerns directly and accurately? |
+| **Call-to-action execution** | Did the rep leave the buyer with a clear next step? |
+
+The app defaulted to GPT-4.1 mini at temperature 0.2, though the model could be changed in settings. Since an LLM judged each call, scores needed calibration against human-reviewed examples. Transcript excerpts made the judgments easier to inspect.
+
+Practice analytics included practice-session confidence and a talk/listen ratio based on representative words divided by AI words. The ratio described an exchange but could not prove the rep listened well or sold effectively. Call-to-action execution was a more direct practice measure.
+
+The hardest tradeoff was making Myra sound like a real surgeon or buyer while keeping her grounded in the sales approach and approved device claims. PDFs and product images could add extraction errors or irrelevant material, so we needed to test whether that noise changed the claims she retrieved or the rep used in conversation.
+
+## A hill climb across the whole practice loop
+
+From June through August 2025, we expanded ByteRoll from a web prototype into a mobile practice and conversation-review app. In June, we brought product and persona choices together with script assessment and practice metrics. In July, we moved into a React Native app with native audio capture, transcription, and note summaries. In August, we updated role play, connected conversations to note-based chat and voice Q&A, added photo attachments, and prepared a TestFlight build.
+
+![Timeline of ByteRoll product iterations from June through August 2025: shaping practice, moving to React Native, adding context and review, and preparing for TestFlight.](../images/projects/byteroll/product-iteration-timeline.png)
+
+*The product loop grew from scenario setup to mobile practice and review.*
+
+In retrospect, the hill climb was about connecting the work around a sales conversation: decide what to practice, meet a believable buyer, bring in device context, and understand what to improve afterward. Each addition moved closer to that loop and surfaced another quality question.
+
+The hard tradeoff stayed the same: a realistic agent should adapt to a surgeon’s questions while reflecting the selected sales approach and staying grounded in supported device claims. Script adherence, key messages, and compliance could not be judged by fluency alone. The simulation had to bring the right information into the call, then help the representative use it well.
+
+That experience changed how I evaluate AI products. I look at the model together with the workflow it supports, the source material it relies on, and the feedback the user can act on afterward.
+
+## The pilot that brought the work close to reps
+
+With the product focused on medical-device sales, [Medella Northwest](https://www.medellanw.com/for-manufacturers) became our primary pilot. Kent Schmuland and my cofounder, Nadeem Chaudhry, worked with the rep team nearly every week. We piloted ByteRoll with dozens of reps, creating a close feedback loop around conversations about specific orthopedic devices.
+
+Skeletal Dynamics was a design partner, giving the work a concrete orthopedic-device context. The scenarios and product materials could be shaped around the devices reps discussed with surgeons, rather than generic sales conversations.
+
+Beyond the pilot, teams at Boston Scientific and Stryker also tried the product. NeuroPace was a design partner, though its team did not try the app.
+
+### Different kinds of partner engagement
+
+| **Organization** | **Engagement** | **What it meant** |
+| --- | --- | --- |
+| **Medella Northwest** | Primary pilot | Nearly weekly work with Kent Schmuland, cofounder Nadeem Chaudhry, and the rep team; dozens of reps participated. |
+| **Skeletal Dynamics** | Design partner | A concrete orthopedic-device product context for the practice scenarios. |
+| **Boston Scientific** | Product trial | A team tried the product; a possible path into a larger medical-device organization. |
+| **Stryker** | Product trial | A team tried the product; another potential enterprise path. |
+| **NeuroPace** | Design partner | Considered for a broader launch; the team did not try the product. |
+
+Together, these partners gave us repeated practice with a distributor team, product-specific design feedback, and early product trials. Medella Northwest provided the deepest day-to-day learning for the medical-device product.
+
+## From early traction to a go-to-market test
+
+During our healthcare-intelligence research, we spoke with at least 20 healthcare companies. After focusing ByteRoll on medical-device sales, we piloted with dozens of Medella Northwest reps and worked with the team nearly every week. Teams at Boston Scientific and Stryker also tried the app. This was a meaningful step from research into use by sales teams.
+
+The clearest outcome at this stage was engagement. To understand its effect on sales performance, we needed a longer measurement window. The next go-to-market step was to make the pilot repeatable: help managers choose device content, personas, and scenarios, then see whether reps returned and improved across practice sessions. A call-quality rubric gave us a way to assess script adherence, key messages, compliance, rapport, objection handling, and next-step execution.
+
+If repeated practice improved those conversation measures, the next step would be broader deployments inside medical-device manufacturers. Once the medical-device workflow was repeatable, we could extend the field-sales thesis to other industries.
+
+![Four stages of ByteRoll’s go-to-market learning: 20-plus healthcare-company interviews, a Medella Northwest pilot with dozens of reps, product trials at Boston Scientific and Stryker, and a next test of repeat practice and call quality.](../images/projects/byteroll/go-to-market-evidence.png)
+
+*Early adoption signals shaped the next test: measure repeat use and conversation improvement.*
+
+## What happened to ByteRoll, and what I learned
+
+Ultimately, I decided to shut ByteRoll down. In hindsight, the decision came down to the company’s financial position and my own capacity to keep going: we were running low on funds, investors interested in funding us wanted to see more traction, and I was burnt out after several years as an entrepreneur.
+
+What ByteRoll taught me most was that evals are part of product design. Writing the rubric early forces a team to turn a broad ambition into concrete tasks and failure conditions before the system architecture hardens. In our case, the rubric had to follow the whole path we were designing for: finding device evidence in PDFs and product images, generating claims faithful to that evidence, and bringing those claims into a selected sales scenario naturally and within approved language. Those stages could fail in different ways, so one overall “good conversation” score would hide where a problem began.
+
+That also shaped how I think about an LLM-as-judge. It can help assess qualities such as rapport or objection handling, but its score is useful only if the criteria are explicit and the judgment can be checked. Transcript excerpts show what the model based its assessment on; human-reviewed examples help calibrate whether the judge agrees with experienced reps or managers. For facts that can be checked directly, a deterministic grader is clearer and easier to trust.
+
+I had been blending two different questions. A call-level evaluation asks whether one practice conversation was accurate, useful, compliant, and natural. A training evaluation asks whether reps return to practice, improve across sessions, and use what they learned in real calls. Call scores can help diagnose and improve the simulation; repeated use and real-world behavior tell us whether the training product is working. That longer measurement loop would connect the agent’s quality to the outcome the business cared about.
+
+That is the standard I would carry into another AI product: define success around the user’s real work, make the eval rubric specific enough to expose meaningful failures, and validate the graders before trusting the scores. ByteRoll showed me that a convincing conversation is only a proxy. The product has to help the user do their job better.
+
+## Acknowledgments
+
+ByteRoll was shaped by people who made time to share their experience, challenge our assumptions, and work through the product with us. I’m grateful to the Menlo Ventures EIR team and to Shawn Carolan, Greg Rudin, Ryan Hand, and Michelle Agunis for their support and customer research. Thank you to my cofounders, Sunny Shah and Nadeem Chaudhry, for leading the technical work.
+
+Special thanks to Kent Schmuland and the Medella Northwest sales team, who worked with us week after week as our primary pilot. Special thanks to Skeletal Dynamics and NeuroPace for their design partnership, and to the teams at Boston Scientific and Stryker for trying the product and sharing feedback. Thank you to everyone who gave ByteRoll their time and helped shape what we learned.
