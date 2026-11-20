@@ -263,9 +263,15 @@ export const speaking: Entry[] = [
 ];
 export const prototypes: Entry[] = [
   {
-    "title": "Building a language model evaluation workflow\u2014and a course around it",
+    "title": "Building ByteRoll: Voice AI for Medical-Device Sales Practice",
+    "description": "How healthcare-intelligence research led to a voice-based practice app for medical-device reps, and why evaluation became central to the product.",
+    "url": "/prototyping/byteroll/",
+    "detail": "AI product management · Medical-device sales · Voice AI · Evaluation"
+  },
+  {
+    "title": "Building a language model evaluation workflow—and a course around it",
     "description": "Building a custom customer-support evaluation, comparing model and prompt behavior, and packaging the workflow into a hands-on course for AI product managers.",
     "url": "/prototyping/language-model-evaluation/",
-    "detail": "EleutherAI lm_eval \u00b7 Python \u00b7 Open-source course"
+    "detail": "EleutherAI lm_eval · Python · Open-source course"
   }
 ];
