@@ -2,7 +2,7 @@
 
 How healthcare-intelligence research led to a voice-based practice app for medical-device reps, and why evaluation became central to the product.
 
-## The problem I knew firsthand
+## The Problem
 
 The idea for ByteRoll started with a problem I had seen firsthand at Gentem Health. I sold the business in November 2023, but kept thinking about how hard it had been for our team to use healthcare intelligence to understand the hospitals and clinics we wanted to serve.
 
