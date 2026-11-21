@@ -56,7 +56,7 @@ Those demands made orthopedic devices our focused first market and pointed towar
 
 ## The product: An AI coach for field sales teams
 
-ByteRoll was an AI practice and coaching app for field sales, starting with orthopedic devices. It turned that preparation job into a practice loop: reps chose a product topic, sales approach, and surgeon or care-team persona, then rehearsed aloud with Myra. Company and device materials gave the simulation product context, and Notes let reps review role-play notes, sales conversations with prospects, and coaching afterward. That addressed the need directly: reps could practice explaining a device accurately to the surgeon or care team in front of them.
+ByteRoll was a voice-based AI role-play and coaching app for field sales teams, starting with medical device sales. It turned that preparation job into a practice loop: reps chose a product topic, sales approach, and surgeon or care-team persona, then rehearsed aloud with Myra. Company and device materials gave the simulation product context, and Notes let reps review role-play notes, sales conversations with prospects, and coaching afterward. That addressed the need directly: reps could practice explaining a device accurately to the surgeon or care team in front of them.
 
 ## The rep's practice flow
 
