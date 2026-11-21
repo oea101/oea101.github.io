@@ -54,7 +54,7 @@ This is a distinctive kind of selling. A qualitative study of 22 orthopedic and 
 
 Those demands made orthopedic devices our focused first market and pointed toward a broader field-sales thesis. We saw a similar need in HVAC, where representatives often have to explain complex equipment to contractors and help them understand how it is selected and used. The longer-term opportunity was to help field reps practice those product conversations and the customer training that goes with them.
 
-## The product: AI practice for field sales
+## The product: An AI coach for field sales teams
 
 ByteRoll was an AI practice and coaching app for field sales, starting with orthopedic devices. It turned that preparation job into a practice loop: reps chose a product topic, sales approach, and surgeon or care-team persona, then rehearsed aloud with Myra. Company and device materials gave the simulation product context, and Notes let reps review role-play notes, sales conversations with prospects, and coaching afterward. That addressed the need directly: reps could practice explaining a device accurately to the surgeon or care team in front of them.
 
