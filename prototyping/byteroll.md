@@ -31,7 +31,7 @@ A revenue-cycle company used account data to find hospitals and understand which
 
 The questions were different, even when the underlying need sounded similar: Which organizations should we focus on? Who matters there? What is happening at that account? What evidence would help a seller decide what to do next? The answer depended on the segment, the buyer, and the decision the team was trying to make.
 
-### Research questions and remaining work across four healthcare interviews
+### Examples of healthcare intelligence work by segment
 
 | **Company type** | **Question the team needed to answer** | **Work that remained** |
 | --- | --- | --- |
