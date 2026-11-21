@@ -1,6 +1,5 @@
 # ByteRoll: A Voice AI Company for Medical Device Sales
 
-How healthcare-intelligence research led to a voice-based practice app for medical-device reps, and why evaluation became central to the product.
 
 ## The Problem
 
