@@ -44,7 +44,7 @@ The research expanded to life-sciences teams looking for potential clinical-tria
 
 ## Why the thesis moved toward medical-device sales
 
-As the work evolved, we moved from healthcare intelligence toward sales enablement. We chose orthopedic device sales as our first focus, with a specific job to build around: helping reps prepare for product-specific conversations with surgeons and care teams. Reps needed to understand the device, tailor the explanation to the audience, and speak accurately about how it fit the team's work.
+As the work evolved, we moved from healthcare intelligence toward medical device sales enablement. Among the segments we explored, medical device sales had the biggest gap between the demands on reps and the training support available to them. Reps had to master detailed product information and discuss specific devices with surgeons and care teams, but few tools helped them practice those conversations. We chose orthopedic devices as our first focus and centered on a concrete job: helping reps prepare for product-specific conversations, tailor their explanations to the audience, and describe the device accurately in context.
 
 This is a distinctive kind of selling. A qualitative study of 22 orthopedic and cardiovascular physicians described device representatives supporting training, troubleshooting, device assembly, and the learning curve for new devices. The American College of Surgeons also describes representatives as educators and technical facilitators, while emphasizing that their presence does not replace preoperative training for the surgical team and that they must not make medical decisions. [Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC5373623/)  |  [American College of Surgeons guidance](https://www.facs.org/about-acs/statements/health-care-industry-representatives-in-the-operating-room/)
 
@@ -52,7 +52,7 @@ This is a distinctive kind of selling. A qualitative study of 22 orthopedic and 
 
 *Examples from Skeletal Dynamics' wrist and forearm systems*
 
-Those demands made medical devices a focused first market for a broader field-sales thesis, with a possible path into HVAC and construction.
+Those demands made orthopedic devices our focused first market and pointed toward a broader field-sales thesis. We saw a similar need in HVAC, where representatives often have to explain complex equipment to contractors and help them understand how it is selected and used. The longer-term opportunity was to help field reps practice those product conversations and the customer training that goes with them.
 
 ## The product: AI practice for field sales
 
