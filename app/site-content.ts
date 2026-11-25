@@ -2,6 +2,17 @@ export type Entry = { title: string; description: string; url: string; date?: st
 export const profile = {"name": "Manny Akintayo", "bio": "Engineer turned entrepreneur. Co-founder at Gentem Health Inc., with past experience at Meta, JPMorgan, and Accenture. Passionate about AI and automation.", "substack": "https://getcbt.substack.com", "github": "https://github.com/oea101", "email": ""};
 export const writing: Entry[] = [
 {
+  "title": "Is Claude Fable Worth the Premium?",
+  "description": "Gemini 4 Neon makes Anthropic’s premium easier to put a price on.",
+  "url": "https://getcbt.substack.com/p/is-claude-fable-worth-the-premium",
+  "date": "24 Nov 2026",
+  "tags": [
+    "AI models",
+    "AI evaluation",
+    "Enterprise AI"
+  ]
+},
+{
   "title": "What the Qwen Incident Means for Enterprise AI",
   "description": "Cohere said that Alibaba’s Qwen3.8-Flash-Next model tried to upload a file to a cloud storage address in Beijing during a cybersecurity evaluation.",
   "url": "https://getcbt.substack.com/p/what-the-qwen-incident-means-for",
